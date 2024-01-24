@@ -1,0 +1,69 @@
+.bg-layer {
+  background-image: url(../imgs/france.jpg);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.bg-layer::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(49, 153, 171, 0.575);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media (max-width: 767px) {
+  .search {
+    width: 100%;
+  }
+}
+@media (min-width:768px ){ 
+  .search{ 
+    width: 35%;
+  }
+}
+
+.search-input {
+  padding: 10px 10px 10px 35px;
+  border: none;
+  outline: none;
+}
+.search-input:focus {
+  border: none;
+  outline: none;
+}
+.search-icon {
+  left: 15px;
+  font-size: 14px;
+  color: #657075;
+}
+
+.item-today {
+  background-color: #3199ab;
+  overflow: hidden;
+}
+.head {
+  background-color: #374850;
+}
+
+.head p {
+  color: #bfc1c8;
+}
+.next-day {
+  background-color: #83bbc4;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.next-day:hover {
+  background-color: #3199ab;
+}
+.temperature-status {
+  color: #455a64;
+  text-shadow: 0 0 1px #455a64, 0 0 1px #455a64;
+}
+
+.item-today .temperature-deg {
+  font-size: 50px;
+}

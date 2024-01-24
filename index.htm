@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styling.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="bg-layer p-5 bg-dark min-vh-100">
+      <div class="weather-app position-relative z-1">
+        <div class="search container input-group mx-auto">
+          <i
+            class="search-icon ps-2 fas fa-search position-absolute top-50 translate-middle-y"
+          ></i>
+          <input
+            type="text"
+            class="search-input w-100 rounded-5"
+            placeholder="Search..."
+            aria-label="Search"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+
+        <div class="container mt-5">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="item-today card shadow"></div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="next-day card shadow text-center h-100"></div>
+            </div>
+            <div class="col-md-4">
+              <div class="next-day card shadow text-center h-100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
